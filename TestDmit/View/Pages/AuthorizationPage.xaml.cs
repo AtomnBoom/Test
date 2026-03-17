@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using TestDmit.Class;
 
 namespace TestDmit.View.Pages
 {
@@ -23,6 +24,23 @@ namespace TestDmit.View.Pages
         public AuthorizationPage()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            string pass = "123";
+             if(PassB.Password == null)
+            {
+                MessageBox.Show("Введите пароль!");
+            }
+            else if (PassB.Password == pass)
+            {
+                ClassFrame.MainFrame.Navigate(new MainPage());
+            }
+            else
+            {
+                MessageBox.Show("Пароль не верный!");
+            }
         }
     }
 }

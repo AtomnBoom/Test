@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
+using TestDmit.Model;
 
 namespace TestDmit
 {
@@ -13,5 +14,6 @@ namespace TestDmit
     /// </summary>
     public partial class App : Application
     {
+        public static testEntities context = new testEntities();
     }
 }

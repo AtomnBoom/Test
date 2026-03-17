@@ -8,7 +8,31 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="RegistrationPage">
 
-    <Grid>
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="15" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="15" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="15" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="15" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="15" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="15" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <TextBlock Text="Выберите группу" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="28" Grid.Row="0"/>
+        <ComboBox Name="GroupCb" Width="300" Height="50" Grid.Row="2" VerticalContentAlignment="Center" FontSize="20" SelectionChanged="GroupCb_SelectionChanged"/>
+
+        <TextBlock Text="Выберите студента" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="28" Grid.Row="4"/>
+        <ComboBox Name="StudentCb" Width="300" Height="50" Grid.Row="6" VerticalContentAlignment="Center" FontSize="20"/>
         
+        <TextBlock Text="Выберите тест" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="28" Grid.Row="8"/>
+        <ComboBox Name="TestCb" Width="300" Height="50" Grid.Row="10" VerticalContentAlignment="Center" FontSize="20"/>
+
+        <Button Content="Начать" Grid.Row="12" Width="150" Height="40" VerticalAlignment="Top" Click="Button_Click"/>
     </Grid>
 </Page>
