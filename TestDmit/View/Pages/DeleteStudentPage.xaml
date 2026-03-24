@@ -8,7 +8,27 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="DeleteStudentPage">
 
-    <Grid>
-        
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="10" />
+            <RowDefinition Height="200" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="60" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <TextBlock Text="Название группы" FontSize="30"/>
+        <ComboBox Name="GroupCmb" Height="50" Width="200" SelectionChanged="GroupCmb_SelectionChanged"/>
+        <Button Name="SearchBtn" Content="Очистить" Height="50" Width="200" HorizontalAlignment="Right" FontSize="20" Click="SearchBtn_Click"/>
+        <ListView Name="StudentLv" Grid.Row="2" >
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="ФИО"
+                                    DisplayMemberBinding="{Binding Name}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button Name="DeleteStudentBtn" Grid.Row="4" Content="Удалить студента" Height="50" Width="200" HorizontalAlignment="Left" FontSize="20" Click="DeleteStudentBtn_Click"/>
+        <Button Name="BackBtn" Grid.Row="4" Content="Назад" Height="50" Width="200" HorizontalAlignment="Right" FontSize="20" Click="BackBtn_Click"/>
     </Grid>
 </Page>

@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using TestDmit.Class;
 
 namespace TestDmit.View.Pages
 {
@@ -23,6 +24,30 @@ namespace TestDmit.View.Pages
         public MenuPage()
         {
             InitializeComponent();
+        }
+        private void AddStudentBtn_Click(object sender, RoutedEventArgs e)
+        {
+            ClassFrame.MainFrame.Navigate(new AddStudentPage());
+        }
+
+        private void AddGroupBtn_Click(object sender, RoutedEventArgs e)
+        {
+            ClassFrame.MainFrame.Navigate(new AddGroupPage());
+        }
+
+        private void LIstStudentBtn_Click(object sender, RoutedEventArgs e)
+        {
+            ClassFrame.MainFrame.Navigate(new ListStudentPage());
+        }
+
+        private void DeleteStudentBtn_Click(object sender, RoutedEventArgs e)
+        {
+            ClassFrame.MainFrame.Navigate(new DeleteStudentPage());
+        }
+
+        private void ExitBtn_Click(object sender, RoutedEventArgs e)
+        {
+            ClassFrame.MainFrame.Navigate(new MainPage());
         }
     }
 }

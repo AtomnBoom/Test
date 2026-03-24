@@ -9,6 +9,19 @@
       Title="MenuPage">
 
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+
+        <Button Name="AddStudentBtn" Content="Добавить студента" Width="300" Height="40" Click="AddStudentBtn_Click"/>
+        <Button Name="AddGroupBtn" Content="Добавить группу" Grid.Row="1" Width="300" Height="40" Click="AddGroupBtn_Click"/>
+        <Button Name="LIstStudentBtn" Content="Список студентов с оценками" Grid.Row="2" Width="300" Height="40" Click="LIstStudentBtn_Click"/>
+        <Button Name="DeleteStudentBtn" Content="Удалить студента" Grid.Row="3" Width="300" Height="40" Click="DeleteStudentBtn_Click"/>
+        <Button Name="ExitBtn" Content="выйти в главное меню" Grid.Row="4" Width="300" Height="40" Click="ExitBtn_Click"/>
     </Grid>
 </Page>

@@ -9,6 +9,414 @@
       Title="Test1Page">
 
     <Grid>
-        
+        <TabControl Name="ProductsTc">
+            <TabItem Name="v1">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="1">1</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel Margin="10">
+                        <TextBlock Text="Пути формирования отраслей промышленности:" FontSize="25" HorizontalAlignment="Left" Margin="5"/>
+                        <TextBlock Text="1. выделение отраслей промышленности из других отраслей национального хозяйства;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <TextBlock Text="2. углубление специализации в самой промышленности;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <TextBlock Text="3. развитие концентрации в промышленности;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <TextBlock Text="4. расширение комбинирования в промышленности;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <TextBlock Text="5. научно-технический процесс." FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <TextBox Name="AnswerTb" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10" Width="75" Height="22"/>
+                        <Button Name="AnswerBtn" Content="Принять" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10" Width="75" Height="22" Click="AnswerBtn_Click"/>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+
+            <TabItem Name="v2">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="1">2</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel Margin="10">
+                        <TextBlock Text="Принцип, лежащий в основе деления промышленной продукции на группы А и Б:" FontSize="25" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Content="назначение производимой продукции;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Name="RB2" Content="фактическое использование продукции;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Content="общность основного сырья;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Content="сложность технологических процессов.;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <Button Name="Answer2Btn" Content="Принять" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10" Width="75" Height="22" Click="Answer2Btn_Click"/>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+
+            <TabItem Name="v3" >
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="1">3</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel Margin="10">
+                        <TextBlock Text="Отраслевая структура промышленности характеризуется:" FontSize="25" HorizontalAlignment="Left" Margin="5"/>
+                        <CheckBox Name="VCb1" Content="долей продукции отрасли в общем выпусе промпродукции;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <CheckBox Name="VCb2" Content="долей основных фондов отрасли в общем объеме основных фондов промышленности;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <CheckBox Name="VCb3" Content="долей оборотных фондов в общем объеме оборотных фондов промышленности;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <CheckBox Name="VCb4" Content="долей работников, занятыз в отрасли, в общей численности работников промышленности;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <CheckBox Name="VCb5" Content="долей прибыли отрасли в общей прибыли промышленности;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <Button Name="Answer3Btn" Content="Принять" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10" Width="75" Height="22" Click="Answer3Btn_Click"/>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+
+            <TabItem Name="v4">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="1">4</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel Margin="10">
+                        <TextBlock Text="К основным направлениям научно-техничсекого прогресса в промышленности относятся:" FontSize="25" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Name="RB4" Content="электрификация промышленности;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Content="комплексная механизация, автоматизация и компьютеризация промышленности;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Content="специализация промышленности;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Content="химизация промышленности.;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Content="1, 2, 4;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <Button Name="Answer4Btn" Content="Принять" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10" Width="75" Height="22" Click="Answer4Btn_Click"/>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+
+            <TabItem Name="v5">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="1">5</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel Margin="10">
+                        <TextBlock Text="Какой тип производства является наиболее эффективным с точки зрения минимизации издержек производства:" TextWrapping="Wrap" FontSize="25" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Name="RB5" Content="индивидуальное производство;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Content="мелкосерийное производство;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Content="массовое производство;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Content="непрерывное производство;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <Button Name="Answer5Btn" Content="Принять" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10" Width="75" Height="22" Click="Answer5Btn_Click"/>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+
+            <TabItem Name="v6">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="1">6</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel Margin="10">
+                        <TextBlock Text="Серийному производству свойственны:" TextWrapping="Wrap" FontSize="25" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Name="RB6" Content="широкое использование универсального оборудрвания;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Content="организация рабочих мест по технологической специализаци;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Content="типизация технологических процессов и оснастки;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Content="1 - 3;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Content="1, 3;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <Button Name="Answer6Btn" Content="Принять" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10" Width="75" Height="22" Click="Answer6Btn_Click"/>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+
+            <TabItem Name="v7">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="1">7</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel Margin="10">
+                        <TextBlock Text="Единичному производству свойственны:" TextWrapping="Wrap" FontSize="25" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Name="RB7" Content="преимущественная численность рабочих высокой квалификации;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Content="использование универсального оборудования;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Content="непрерывная дистанционная диспетчеризация производства;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Content="1 - 3;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Content="1, 2;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <Button Name="Answer7Btn" Content="Принять" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10" Width="75" Height="22" Click="Answer7Btn_Click"/>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+
+            <TabItem Name="v8">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="1">8</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel Margin="10">
+                        <TextBlock Text="Верно ли утверждение, что увеличение концентрации производства способствует:" TextWrapping="Wrap" FontSize="25" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Name="RB8" Content="оптимальному сочетанию крупных, средних и малых предприятий;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Content="развитию монополизма;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Content="снижению дефицита продукции;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Content="1 - 3;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <Button Name="Answer8Btn" Content="Принять" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10" Width="75" Height="22" Click="Answer8Btn_Click"/>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+
+            <TabItem Name="v9">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="1">9</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel Margin="10">
+                        <TextBlock Text="Государственное регулирование рынка. Правовые основы, ругулирующие предпринимательской деятельности в РФ, устанавливаются:" TextWrapping="Wrap" FontSize="25" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Name="RB9" Content="Указами Президента Рф;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Content="Постановлениями Правительства РФ;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Content="Гражданским кодексом РФ и Федеральными законами;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Content="1 - 3;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Content="1 - 2;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <Button Name="Answer9Btn" Content="Принять" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10" Width="75" Height="22" Click="Answer9Btn_Click"/>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+
+            <TabItem Name="v10">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="1">10</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel Margin="10">
+                        <TextBlock Text="Какие организации признаются юридическими лицами?" TextWrapping="Wrap" FontSize="25" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Name="RB10" Content="организация, которая имеет в собственности обосоьленное имущество;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Content="организация, которая имеет имущество в хозяйственном ведении;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Content="организация, которая имеет обособленное имущество в оперативном;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Content="организация, которая имеет в собстенности, хозяйственном ведении или операивном управлении обособленное имущество;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <Button Name="Answer10Btn" Content="Принять" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10" Width="75" Height="22" Click="Answer10Btn_Click"/>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+
+            <TabItem Name="v11">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="1">11</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel Margin="10">
+                        <TextBlock Text="С какого момента юридическое лицо приобретает гражданские права и принимает на себя гражданские обязанности?" TextWrapping="Wrap" FontSize="25" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Name="RB11" Content="с момента его государственной регистрации;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Content="с момента подписания учредительных документов;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <Button Name="Answer11Btn" Content="Принять" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10" Width="75" Height="22" Click="Answer11Btn_Click"/>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+
+            <TabItem Name="v12">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="1">12</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel Margin="10">
+                        <TextBlock Text="Какая форма предпринимательства наиболее приемлема для малых торговых предприятий?" TextWrapping="Wrap" FontSize="25" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Name="RB12" Content="индивидуальное предпринимательство;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Content="акционерное общество;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Content="унитарное предприятие;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <Button Name="Answer12Btn" Content="Принять" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10" Width="75" Height="22" Click="Answer12Btn_Click"/>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+
+            <TabItem Name="v13">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="1">13</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel Margin="10">
+                        <TextBlock Text="Процесс создания материальных и нематериальных благ, необходимых для существования и развития общества:" TextWrapping="Wrap" FontSize="25" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Name="RB13" Content="произвоство;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Content="сбыт;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Content="труд;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Content="средства производства;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Content="реализация продукции;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <Button Name="Answer13Btn" Content="Принять" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10" Width="75" Height="22" Click="Answer13Btn_Click"/>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+
+            <TabItem Name="v14">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="1">14</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel Margin="10">
+                        <TextBlock Text="Укажите основную цель функционирования предприятия в рыночных условия:" TextWrapping="Wrap" FontSize="25" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Name="RB14" Content="получение прибыли и ее максимизация;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Content="повышение заработной платы работников;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Content="выход на мировой рынок;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Content="максимальное удовольствие общественных потребностей;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Content="совершенствование производственное структуры предприятия;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <Button Name="Answer14Btn" Content="Принять" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10" Width="75" Height="22" Click="Answer14Btn_Click"/>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+
+            <TabItem Name="v15">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="1">15</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel Margin="10">
+                        <TextBlock Text="Предприятия по формам собственности классифицуются на:" FontSize="25" HorizontalAlignment="Left" Margin="5"/>
+                        <TextBlock Text="1. индивидуальные;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <TextBlock Text="2. частные;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <TextBlock Text="3. малые;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <TextBlock Text="4. государственные;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <TextBlock Text="5. муниципальные." FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <TextBox Name="Answer15Tb" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10" Width="75" Height="22"/>
+                        <Button Name="Answer15Btn" Content="Принять" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10" Width="75" Height="22" Click="Answer15Btn_Click_1"/>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+
+            <TabItem Name="v16">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="1">16</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel Margin="10">
+                        <TextBlock Text="Предпринимательская деятельность - это ..." TextWrapping="Wrap" FontSize="25" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Name="RB16" Content="мобильность, динамичность и необходимость действий в условиях неопределенности;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Content="система отношений между субъектами по поводу присвоения и отчуждения объектов;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <Button Name="Answer16Btn" Content="Принять" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10" Width="75" Height="22" Click="Answer16Btn_Click"/>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+
+            <TabItem Name="v17">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="1">17</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel Margin="10">
+                        <TextBlock Text="Имущественный комплекс, используемый для осуществления предпринимательской деятельности:" TextWrapping="Wrap" FontSize="25" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Name="RB17" Content="кооператив;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Content="концерн;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Content="предприятие;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Content="ассоциация;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Content="союз;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <Button Name="Answer17Btn" Content="Принять" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10" Width="75" Height="22" Click="Answer17Btn_Click"/>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+
+            <TabItem Name="v18">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="1">18</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel Margin="10">
+                        <TextBlock Text="Классификация фирм по форме собственности:" TextWrapping="Wrap" FontSize="25" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Name="RB18" Content="государственные и частные;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Content="муниципальные и частные;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Content="государственные и муниципальные;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Content="государственные и кооперативные;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Content="частные и смешанные;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <Button Name="Answer18Btn" Content="Принять" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10" Width="75" Height="22" Click="Answer18Btn_Click"/>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+
+            <TabItem Name="v19">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="1">19</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel Margin="10">
+                        <TextBlock Text="Маркетинговая деятельность на предприятии - это..." TextWrapping="Wrap" FontSize="25" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Name="RB19" Content="деятельность предприятия по обновлению технологии изготовления товаров;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Content="деятельность предприятия по закупке сырья и материалов для производства товаров;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Content="деятельность предприятия по заключению договоров с посредническими организациями по сбыту товаров;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Content="деятельность предприятия на основе изучения законов рынка в целях реализации товаров и услуг и получения прибыли в условиях конкуренции;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <Button Name="Answer19Btn" Content="Принять" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10" Width="75" Height="22" Click="Answer19Btn_Click"/>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+
+            <TabItem Name="v20">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="1">20</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel Margin="10">
+                        <TextBlock Text="Что такое емкость рынка:" TextWrapping="Wrap" FontSize="25" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Name="RB20" Content="максимльная территория, на которой возможен сбыт;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Content="максимально возможный объем сбыта на данном рынке;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Content="численность населения в границах максимальной территории, на которой возможен сбыт;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <Button Name="Answer20Btn" Content="Принять" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10" Width="75" Height="22" Click="Answer20Btn_Click"/>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+
+            <TabItem Name="v21">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="1">21</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel Margin="10">
+                        <TextBlock Text="Главная цель коммерческих предприятий:" TextWrapping="Wrap" FontSize="25" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Name="RB21" Content="обеспечение условий расширенного воспроизводства;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Content="получение максимальной прибыли;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Content="увеличение количества рабочих мест;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Content="социальное обеспечение;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <RadioButton Content="удовлетворение общественных потребностей;" FontSize="20" HorizontalAlignment="Left" Margin="5"/>
+                        <Button Name="Answer21Btn" Content="Принять" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10" Width="75" Height="22" Click="Answer21Btn_Click"/>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+
+            <TabItem Name="result">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="1">Результат</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel Margin="10">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Правильных ответов:" TextWrapping="Wrap" FontSize="25" HorizontalAlignment="Left" Margin="5"/>
+                            <TextBlock Name="AnswerTbl" HorizontalAlignment="Left" FontSize="20" Width="100" Margin="10"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Ваша оценка:" TextWrapping="Wrap" FontSize="25" HorizontalAlignment="Left" Margin="5"/>
+                            <TextBlock Name="MarkTbl" HorizontalAlignment="Left" FontSize="20" Width="100" Margin="10"/>
+                        </StackPanel>
+                        <Button Name="ResultBtn" Content="Показать результат" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10" Width="120" Height="22" Click="ResultBtn_Click"/>
+                        <Button Name="OkBtn" Content="OK" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10" Width="75" Height="22" Click="OkBtn_Click"/>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+        </TabControl>
     </Grid>
 </Page>
