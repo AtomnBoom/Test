@@ -45,7 +45,7 @@ namespace TestDmit.View.Pages
         private void StudentCmb_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             Student student = StudentCmb.SelectedItem as Student;
-            if (StudentCmb.SelectedIndex == 0)
+            if (StudentCmb.SelectedItem == null)
             {
                 ListStudentDg.ItemsSource = App.context.Journal.ToList();
             }
@@ -58,7 +58,7 @@ namespace TestDmit.View.Pages
         private void GroupCmb_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             Group group = GroupCmb.SelectedItem as Group;
-            if (GroupCmb.SelectedIndex == 0)
+            if (GroupCmb.SelectedItem == null)
             {
                 ListStudentDg.ItemsSource = App.context.Journal.ToList();
             }

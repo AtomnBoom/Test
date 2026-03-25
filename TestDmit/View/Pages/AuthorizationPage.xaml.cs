@@ -35,7 +35,7 @@ namespace TestDmit.View.Pages
             }
             else if (PassB.Password == pass)
             {
-                ClassFrame.MainFrame.Navigate(new MainPage());
+                ClassFrame.MainFrame.Navigate(new MenuPage());
             }
             else
             {
