@@ -44,6 +44,7 @@ namespace TestDmit.View.Pages
             if (messageBoxResult == MessageBoxResult.Yes)
             {
                 App.context.Student.Remove(selectedStudent);
+                App.context.SaveChanges();
                 MessageBox.Show("Студент удален");
 
             }
