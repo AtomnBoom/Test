@@ -102,6 +102,28 @@
                     </StackPanel>
                 </TabItem.Content>
             </TabItem>
+
+            <TabItem Name="result">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="1">Результат</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel Margin="10">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Правильных ответов:" TextWrapping="Wrap" FontSize="25" HorizontalAlignment="Left" Margin="5"/>
+                            <TextBlock Name="AnswerTbl" HorizontalAlignment="Left" FontSize="20" Width="100" Margin="10"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Ваша оценка:" TextWrapping="Wrap" FontSize="25" HorizontalAlignment="Left" Margin="5"/>
+                            <TextBlock Name="MarkTbl" HorizontalAlignment="Left" FontSize="20" Width="100" Margin="10"/>
+                        </StackPanel>
+                        <Button Name="ResultBtn" Content="Показать результат" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10" Width="120" Height="22" Click="ResultBtn_Click"/>
+                        <Button Name="OkBtn" Content="OK" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10" Width="75" Height="22" Click="OkBtn_Click"/>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
         </TabControl>
     </Grid>
 </Page>

@@ -29,6 +29,7 @@ namespace TestDmit.View.Pages
             GroupCmb.SelectedValuePath = "Id";
             GroupCmb.DisplayMemberPath = "Name";
             GroupCmb.ItemsSource = App.context.Group.ToList();
+            GroupCmb.SelectedIndex = 0;
         }
 
         private void SearchBtn_Click(object sender, RoutedEventArgs e)
@@ -44,9 +45,7 @@ namespace TestDmit.View.Pages
             if (messageBoxResult == MessageBoxResult.Yes)
             {
                 App.context.Student.Remove(selectedStudent);
-                App.context.SaveChanges();
                 MessageBox.Show("Студент удален");
-
             }
 
         }
@@ -59,7 +58,7 @@ namespace TestDmit.View.Pages
         private void GroupCmb_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             Group group = GroupCmb.SelectedItem as Group;
-            if (GroupCmb.SelectedIndex == 0)
+            if (GroupCmb.SelectedItem == null)
             {
                 StudentLv.ItemsSource = App.context.Student.ToList();
             }

@@ -389,7 +389,6 @@ namespace TestDmit.View.Pages
             };
 
             App.context.Journal.Add(journal);
-            App.context.SaveChanges();
 
             ClassFrame.MainFrame.Navigate(new RegistrationPage());
         }
